@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+service LambdaService {
+  rpc GenerateText (GenerateTextRequest) returns (GenerateTextResponse);
+}
+
+message GenerateTextRequest {
+  string query = 1;
+}
+
+message GenerateTextResponse {
+  string response = 1;
+}
