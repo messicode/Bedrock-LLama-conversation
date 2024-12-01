@@ -1,4 +1,4 @@
-# Step 1: Build Stage
+ver# Step 1: Build Stage
 FROM openjdk:11-jre-slim as builder
 
 # Install Scala
@@ -21,10 +21,10 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the JAR file from the builder stage
-COPY --from=builder /app/target/scala-2.13/your-akka-http-project.jar /app/
+COPY --from=builder /app/target/scala-2.13/akka-http-server.jar /app/
 
 # Expose the port for the Akka HTTP server
 EXPOSE 8080
 
 # Run the application
-CMD ["java", "-jar", "your-akka-http-project.jar"]
+CMD ["java", "-jar", "akka-http-server.jar"]
