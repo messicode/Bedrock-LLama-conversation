@@ -16,6 +16,7 @@ This project involves building and deploying a conversational agent using Akka H
 ├── Conversational Agent
 │   └── Client project files
 ├── Lambda Function
+│   └── Python Lambda function
 └── .git/
 ```
 
