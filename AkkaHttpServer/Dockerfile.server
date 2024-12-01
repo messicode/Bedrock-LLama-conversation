@@ -1,0 +1,3 @@
+FROM openjdk:11-jre-slim
+COPY target/scala-2.13/akka-http-server.jar /app/server.jar
+CMD ["java", "-jar", "/app/server.jar"]
