@@ -7,6 +7,19 @@ This project involves building and deploying a conversational agent using Akka H
 
 ## Overview
 
+### Project structure
+
+```plaintext
+│
+├── AkkaHttpServer
+│   └── Server project files
+├── Conversational Agent
+│   └── Client project files
+├── Lambda Function
+└── .git/
+```
+
+
 ### AkkaHttpServer
 This project comtains the files for an akka-http based RESTful API acting as a server between the locally hosted Ollama LLama model and AWS Bedrock model.
 
